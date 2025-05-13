@@ -1,9 +1,0 @@
-
-[
-	{
-		"remote":"github",
-		"repository":"OpenKirin/android_kernel_huawei_hi6250",
-		"target_path":"kernel/huawei/hi6250",
-		"revision":"7.x"
-	}
-]
