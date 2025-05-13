@@ -14,4 +14,21 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_venus.mk
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit some common stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
+
+# Device identifier
+PRODUCT_NAME := lineage_venus
+PRODUCT_DEVICE := venus
+PRODUCT_MODEL := HUAWEI-P9-LITE
+PRODUCT_BRAND := Huawei
+PRODUCT_MANUFACTURER := huawei
+
+# Important Props for USB
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    sys.usb.controller=hisi-usb-otg \
+    sys.usb.configfs=1 \
+    persist.sys.usb.config=adb,mtp
