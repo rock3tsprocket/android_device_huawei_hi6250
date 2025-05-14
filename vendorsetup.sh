@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_hi6250-eng
+add_lunch_combo lineage_venus-eng
