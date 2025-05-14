@@ -6,4 +6,10 @@
 		"target_path":"kernel/huawei/hi6250",
 		"revision":"7.x"
 	}
+	{
+		"remote":"github",
+		"repository":"ToiX3/android_vendor_huawei_hi6250",
+		"target_path":"vendor/huawei/hi6250",
+		"revision":"cm-14.1"
+	}
 ]
